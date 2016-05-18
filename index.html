@@ -91,16 +91,20 @@ it is independent of all posterity.</p>
 <h3>
 <a id="build-new-generation" class="anchor" href="#build-new-generation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build new generation</h3>
 
-<p>Use new generation syntax to build tree generations. Example:</p>
+<p>Use new generation syntax to build tree relationship. Example:</p>
 
 <p><code>
 {child:father,text:'I am father'},
 {mineparent:'father',child:'father-children1',text:'I am children'},
 {mineparent:'father-children1',child:'father-children1-children1',text:'I am children of father children'},
 {mineparent:'father',child:'father-children2',text:'I am children 2'},
-</code></p>
+</code>
+Father contains all objects becouse each mineparent of objects have father generation, but first children contain only one object becouse only one object have father-children1 generation.</p>
 
-<p>father and mother are independently, becouse they create new root </p>
+<h3>
+<a id="label-generation" class="anchor" href="#label-generation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Label generation</h3>
+
+<p>If we decided build DOM manually, </p>
 
 <h1>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
@@ -120,7 +124,7 @@ it is independent of all posterity.</p>
 
 <ul>
 <li>child - It has a unique name for each object. If child is a new generation then child name is father child property and any name maintaining new generation syntax.</li>
-<li>mineparent - look for each child property to indentify relation child-parent. If mineparent equal any child property of object means that mineparent checkbox is a children of this child checkbox. <strong><em>Remember</em></strong> to use relation syntax to create root relationship.</li>
+<li>mineparent - look for each child property to indentify relation child-parent. If mineparent equal any child property of object means that mineparent checkbox is a children of this child checkbox. <strong><em>Remember</em></strong> to use new generation syntax to create tree relationship.</li>
 <li>text - text for label element</li>
 </ul>
 </li>
