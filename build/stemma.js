@@ -328,12 +328,10 @@ var stemmaAPP = (function(){
                 
                 this.checkboxesLib.searchAlg(this.clickedElement,options.broadcast,function(broadcast){
                   self.broadcast.push(broadcast);
-                  console.log(broadcast,'<-- bradcast');
                 });
 
                 this.checkboxesLib.searchAlg(this.clickedElement,options.emit,function(emit){
                   self.emit.push(emit);
-                  console.log(emit,'<-- emit');
                 });
 
                 this.broadcastAction();
