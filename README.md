@@ -1,4 +1,4 @@
 # Stemma
 checkbox tree
 
-Look at: http://zdunecki.github.io/stemma/
+Check out at: http://zdunecki.github.io/stemma/
