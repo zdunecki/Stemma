@@ -45,22 +45,22 @@
 
 <pre><code>&lt;div id="mount"&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;input type="checkbox" data-child="o1"&gt;&lt;label for="mount-o1"&gt;Option 1&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type="checkbox" data-child="o1" id="mount-o1"&gt;&lt;label for="mount-o1"&gt;Option 1&lt;/label&gt;&lt;/li&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1" data-child="o1-o1"&gt;&lt;label for="mount-o1-o1"&gt;Option 1.1&lt;/label&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1" data-child="o1-o2"&gt;&lt;label for="mount-o1-o2"&gt;Option 1.2&lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1" data-child="o1-o1" id="mount-o1-o1"&gt;&lt;label for="mount-o1-o1"&gt;Option 1.1&lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1" data-child="o1-o2" id="mount-o1-o2"&gt;&lt;label for="mount-o1-o2"&gt;Option 1.2&lt;/label&gt;&lt;/li&gt;
                 &lt;ul&gt;
-                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1-o2" data-child="o1-o2-o1"&gt;&lt;label for="mount-o1-o2-o1"&gt;Option 1.2.1&lt;/label&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1-o2" data-child="o1-o2-o2"&gt;&lt;label for="mount-o1-o2-o2"&gt;Option 1.2.2&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1-o2" data-child="o1-o2-o1" id="mount-o1-o2-o1"&gt;&lt;label for="mount-o1-o2-o1"&gt;Option 1.2.1&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o1-o2" data-child="o1-o2-o2" id="mount-o1-o2-o2"&gt;&lt;label for="mount-o1-o2-o2"&gt;Option 1.2.2&lt;/label&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/ul&gt;
-        &lt;li&gt;&lt;input type="checkbox" data-child="o2"&gt;&lt;label for="mount-o2"&gt;Option2&lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type="checkbox" data-child="o2" id="mount-o2""&gt;&lt;label for="mount-o2"&gt;Option2&lt;/label&gt;&lt;/li&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2" data-child="o2-o1"&gt;&lt;label for="mount-o2-o1"&gt;Option 2.1&lt;/label&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2" data-child="o2-o2"&gt;&lt;label for="mount-o2-o2"&gt;Option 2.2&lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2" data-child="o2-o1" id="mount-o2-o1"&gt;&lt;label for="mount-o2-o1"&gt;Option 2.1&lt;/label&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2" data-child="o2-o2" id="mount-o2-o2"&gt;&lt;label for="mount-o2-o2"&gt;Option 2.2&lt;/label&gt;&lt;/li&gt;
                 &lt;ul&gt;
-                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2-o2" data-child="o2-o2-o1"&gt;&lt;label for="mount-o2-o2-o1"&gt;Option 2.2.1&lt;/label&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2-o2" data-child="o2-o2-o2"&gt;&lt;label for="mount-o2-o2-o2"&gt;Option 2.2.2&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2-o2" data-child="o2-o2-o1" id="mount-o2-o2-o1"&gt;&lt;label for="mount-o2-o2-o1"&gt;Option 2.2.1&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type="checkbox" data-mine-parent="o2-o2" data-child="o2-o2-o2" id="mount-o2-o2-o2"&gt;&lt;label for="mount-o2-o2-o2"&gt;Option 2.2.2&lt;/label&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/ul&gt;           
      &lt;/ul&gt;
@@ -100,11 +100,6 @@ it is independent of all posterity.</p>
 {mineparent:'father',child:'father-children2',text:'I am children 2'},
 </code>
 Father contains all objects becouse each mineparent of objects have father generation, but first children contain only one object becouse only one object have father-children1 generation.</p>
-
-<h3>
-<a id="label-generation" class="anchor" href="#label-generation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Label generation</h3>
-
-<p>If we decided build DOM manually, </p>
 
 <h1>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
