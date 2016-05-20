@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>	
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="prototype">
+</div>
+
+<script type="text/javascript"  src="..build/stemma.js"></script>
+<script type="text/javascript">
+
+	var mount = document.getElementById("prototype");
+
+    var data = [
+        {child:'o1',text:'Option 1'},
+        {mineparent:'o1',child:'o1-o1',text:'Option 1.1'},
+        {mineparent:'o1',child:'o1-o2',text:'Option 1.2'},
+        {mineparent:'o1-o2',child:'o1-o2-kutas',text:'Option 1.2.1'},
+        {mineparent:'o1-o2',child:'o1-o2-o2',text:'Option 1.2.2'},
+        {child:'o2',text:'Option 2'},
+        {mineparent:'o2',child:'o2-o1',text:'Option 2.1'},
+        {mineparent:'o2',child:'o2-o2',text:'Option 2.2'},
+        {mineparent:'o2-o2',child:'o2-o2-o1',text:'Option 2.2.1'},
+        {mineparent:'o2-o2',child:'o2-o2-o2',text:'Option 2.2.2'}
+      ];
+	 	
+	 var first = new Stemma(mount,{
+	 	data:data
+	 });
+	
+</script>
+</body>
+</html>
